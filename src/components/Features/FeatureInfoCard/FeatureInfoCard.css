@@ -1,0 +1,48 @@
+.feature-info-card{
+    min-height: 15rem;
+    border-radius: 0.65rem;
+    border: 1.5px solid #a000eb;
+    background: rgba(22, 17, 47, 0.398);
+    backdrop-filter: blur(1rem);
+}
+
+.feature-info-card h6{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(180deg, #c54dfd 0%, #a000eb 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 1.5px solid #a000eb;
+}
+
+.feature-info{
+    padding: 2rem;
+}
+
+.feature-button{
+    padding: 0.8rem 2rem;
+}
+
+.feature-button .feature-btn{
+    text-decoration: none;
+    width: 10rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(90deg, #c54dfd 0%, #a000eb 100%);
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.feature-button .feature-btn:hover{
+    background: linear-gradient(90deg, #a000eb 0%, #c54dfd 100%);
+}
+

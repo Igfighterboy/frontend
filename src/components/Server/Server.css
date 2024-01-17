@@ -1,0 +1,256 @@
+.server-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: red; */
+    margin-top: 2em;
+}
+
+.servers{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background: rgba(22, 17, 47, 0.398);
+    backdrop-filter: blur(1rem);
+    width: 55rem;
+    border-radius: 5px;
+    height: 33rem;
+    padding: 0 6rem;
+    padding-top: 2rem;
+}
+
+.server-container::after,
+.server-container::before{
+    content: " ";
+    width: 28.125rem;
+    height: 28.125rem;
+    background: #7c66e3;
+    border-radius: 28.125rem;
+    position: absolute;
+    z-index: -1;
+    filter: blur(225px);
+}
+
+.server-container::after{
+    top: -3rem;
+    left: -5rem;
+}
+
+.server-container::before{
+    background: #9e51b9;
+    bottom: 2rem;
+    right: 0rem;
+}
+
+.title-base{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.title h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #a000eb;
+}
+
+.line{
+    height: 4px;
+    width: 50px;
+    background: #a000eb;
+    border-radius: 2px;
+}
+
+.title p{
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+}
+
+.data-title h5{
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 2.3px;
+}
+
+.data-title{
+    border-bottom: 1px solid grey;
+    padding-bottom: 1rem;
+}
+
+.data-content-main{
+    display: flex;
+    flex-direction: column;
+    height: 16rem;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    overflow: auto;
+}
+
+.data-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0.6rem 1rem;
+    background: #2a2252;
+    border-radius: 5px;
+}
+
+.image{
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+}
+
+.image p{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.image img{
+    background: black;
+    border-radius: 50%;
+    width: 2rem;
+}
+
+.s-btn{
+    background: linear-gradient(90deg, #c54dfd 0%, #a000eb 100%);
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: .9px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.2rem 1rem;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.s-btn:hover{
+    background: linear-gradient(90deg, #a000eb 0%, #c54dfd 100%);
+}
+
+.s-btn-2{
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: .9px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.2rem 1rem;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.s-btn-2:hover{
+    color: #a000eb;
+    background: #fff;
+}
+
+@media (max-width: 768px){
+    .server-container{
+        margin-top: 0;
+    }
+    .servers{
+        background: transparent;
+        height: max-content;
+    }
+
+    .data-content-main{
+        padding-bottom: 0.5rem;
+        height: max-content;
+    }
+
+    .server-container::after,
+    .server-container::before{
+        content: " ";
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .server-container::after{
+        top: 0rem;
+        left: 0rem;
+    }
+
+    .server-container::before{
+        bottom: 2rem;
+        right: 0;
+    }
+}
+
+@media (max-width: 600px){
+
+    .servers{
+        padding: 0 0;
+    }
+
+    .data-title{
+        padding: 0.2rem 1rem;
+    }
+
+    /* .data-content-main{
+        background: red;
+        padding: 0 0;
+    } */
+
+    .data-content{
+        background: none;
+    }
+}
+
+@media (max-width: 425px){
+
+    .image{
+        gap: 0.8rem;
+    }
+
+    .image p{
+        font-size: 0.8rem;
+    }
+    .image img{
+        width: 1.8rem;
+    }
+
+    .s-btn{
+        font-size: 0.8rem;
+    }
+
+    .s-btn-2{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 380px){
+    .image{
+        gap: 0.6rem;
+    }
+
+    .image p{
+        font-size: 0.7rem;
+    }
+
+    .s-btn{
+        font-size: 0.7rem;
+    }
+
+    .s-btn-2{
+        font-size: 0.6rem;
+    }
+}

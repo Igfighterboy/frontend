@@ -1,0 +1,111 @@
+.featuretone-section{
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 9rem;
+}
+
+.featuretone-content{
+    flex: 1;
+}
+
+.featuretone-content h2{
+    border-bottom: 1px solid #a000eb;
+    padding-bottom: 1rem;
+    width: 20rem;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.featuretone-content p{
+    width: 70%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+
+
+.btn-feat{
+    text-decoration: none;
+    margin-top: 1rem;
+    width: 10rem;
+    height: 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #fff;
+    background: linear-gradient(90deg, #c54dfd 0%, #a000eb 100%);
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-feat:hover{
+    background: linear-gradient(90deg, #a000eb 0%, #c54dfd 100%);
+}
+
+    
+.hero-img img{
+    width: 30rem;
+}
+
+@media (max-width: 1025px){
+    .featuretone-content{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .featuretone-content p{
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+    }
+
+    .hero-img img{
+        width: 20rem;
+    }
+}
+
+@media (max-width: 768px){
+    .featuretone-section{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .hero-img{
+        margin: 2rem 0 2rem 0;
+    }
+
+
+
+    .featuretone-content h2,
+    .featuretone-content p{
+        width: auto;
+        text-align: center;
+    }
+
+    .featuretone-btn{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 600px){
+    .featuretone-content h2{
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+
+    .featuretone-content p{
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+    }
+
+    .hero-img img{
+        width: 16rem;
+    }
+}
